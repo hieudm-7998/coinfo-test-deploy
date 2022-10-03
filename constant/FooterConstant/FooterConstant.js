@@ -1,15 +1,15 @@
 
 const FooterConstant={
-    Logo: "/assets/images/logo.png",
-    subTitle: "Professionally scale cross functional human capital and extensive technology.",
+    Logo: "/assets/images/coinfo-logo.png",
+    subTitle: "We analyse signals to navigate your investment and leverage your income, getting you faster to the roadmap of freedom.",
     GoogleLink: "/",
     LinkedinLink: "/",
     TwitterLink: "/",
     InstagramLink: "/",
-    copyrightText: "Copyright©chakri.All right reserved",
+    copyrightText: "Copyright©coinfo. All right reserved",
     copyrightTwo: "<p>Copyright©<a href='/'>chakri</a>.All right reserved</p>",
-    phone: "971 5546 963",
-    email: "example@gmail.com",
-    address: ["Dhaka, Bangladesh"]
+    phone: "xxxxxxxxxxxx",
+    email: "helpdesk.coinfo@gmail.com",
+    address: ["District 2, Vietnam"]
 }
 export default FooterConstant

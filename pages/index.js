@@ -18,9 +18,9 @@ export default function Home() {
       </header>
       <Futured />
       <HomeDetailOne />
-      <HomeDetailTwo />
+      {/* <HomeDetailTwo /> */}
       <LayoutAppGrid />
-      <HomePricing />
+      {/* <HomePricing /> */}
       <HomeDuelSlider />
       <HomeNewsLater />
       <Footer />

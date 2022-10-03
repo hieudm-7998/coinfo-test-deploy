@@ -325,34 +325,11 @@ input:-webkit-autofill:hover, input:-webkit-autofill:focus {
 .hrdd-section-title.hrrd-subscribe-title h1 {
   color: #fff;
 }
-.hrdd-section-title.hrrd-subscribe-title h1 span::before {
-  border: 0.5px solid #fff;
-  background: #94bcf9;
-}
 .hrdd-section-title h1 {
   font-family: "Circular Std black";
   font-style: normal;
   font-size: 48px;
-  line-height: 58px;
   color: #3b3b3b;
-  display: inline-block;
-}
-.hrdd-section-title h1 span {
-  display: inline-block;
-  z-index: 1;
-  position: relative;
-}
-.hrdd-section-title h1 span::before {
-  position: absolute;
-  left: 0;
-  height: 50px;
-  width: 76%;
-  border: 0.5px solid #0241ff;
-  background: #ffe3d9;
-  top: 50%;
-  transform: translateY(-50%);
-  content: "";
-  z-index: -1;
 }
 
 @-webkit-keyframes up-dn-mark-1 {
@@ -1535,7 +1512,7 @@ input:-webkit-autofill:hover, input:-webkit-autofill:focus {
 }
 
 .hrrd-hero {
-  background: #F0F9FF;
+  background: #f0f9ff;
   padding: 220px 0 134px;
 }
 
@@ -1580,9 +1557,13 @@ input:-webkit-autofill:hover, input:-webkit-autofill:focus {
   transition: color 0.25s ease-in-out;
 }
 
+.featured-area {
+  padding: 6rem 0;
+}
 .featured-area .featured-shape {
-  top: -50px;
-  left: 50%;
+  top: 90px;
+  left: 65%;
+  height: 75%;
   transform: translateX(-50%);
 }
 
@@ -1611,7 +1592,7 @@ input:-webkit-autofill:hover, input:-webkit-autofill:focus {
 }
 .everything-info ul li {
   height: 70px;
-  background: #fff3ef;
+  background: #dbe8ff;
   border-radius: 4px;
   margin-bottom: 16px;
   display: flex;
@@ -1632,7 +1613,7 @@ input:-webkit-autofill:hover, input:-webkit-autofill:focus {
   content: "";
   width: 8px;
   height: 8px;
-  background: #ff7342;
+  background: #165cdd;
   top: 50%;
   left: 31px;
   transform: translateY(-50%);
@@ -2005,6 +1986,7 @@ input:-webkit-autofill:hover, input:-webkit-autofill:focus {
   }
 }
 .apps-box {
+  width: 100%;
   background: #ffffff;
   box-shadow: 5px 30px 56.1276px rgba(55, 55, 55, 0.1098);
   border-radius: 20px;
@@ -2254,14 +2236,17 @@ input:-webkit-autofill:hover, input:-webkit-autofill:focus {
 20. Hrrd Subscribe area CSS
 =================================================*/
 .hrrd-subscribe-wrap {
-  background: #669ff6;
+  background: #F0F9FF;
   -webkit-backdrop-filter: blur(100px);
           backdrop-filter: blur(100px);
   border-radius: 10px;
   padding: 100px 10px;
 }
+.hrrd-subscribe-wrap .hrrd-subscribe-title h1 {
+  color: #165CDD;
+}
 .hrrd-subscribe-wrap .hrrd-subscribe-title p {
-  color: #fff;
+  color: #165CDD;
   margin: 30px 0 52px;
 }
 .hrrd-subscribe-wrap form {
@@ -5360,4 +5345,53 @@ Agency Menu Css
 
 .header-subtitle {
   text-align: justify;
+}
+
+.heading-underscore {
+  text-decoration: underline;
+  -webkit-text-decoration-color: #2873ff;
+          text-decoration-color: #2873ff;
+}
+
+.detail-action-btn {
+  background: #165cdd;
+  padding: 1rem 2.5rem;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-weight: 700;
+}
+
+.news-area {
+  background: #f0f9ff;
+}
+.news-area .news-box {
+  background: white;
+  border-radius: 4px;
+  padding: 1.875rem;
+}
+.news-area .news-box .news-category {
+  color: #5A7184;
+  font-weight: 900;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+.news-area .news-box .news-heading {
+  color: #183B56;
+  font-weight: 900;
+  font-size: 1.5rem;
+  line-height: 34px;
+  margin-bottom: 1rem;
+}
+.news-area .news-box .news-readmore button {
+  color: #2873FF;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  background: none;
+  font-weight: 700;
+}
+
+.box-around-text {
+  border: 1px solid #165CDD;
 }/*# sourceMappingURL=style.css.map */

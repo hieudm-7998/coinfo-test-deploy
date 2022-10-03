@@ -154,18 +154,16 @@ const Header = () => {
         </div>
       </nav> */}
       <div
-        className={`header-menu-area hrrd-menu ${isVisible ? "" : "sticky"} `}
+        className={`header-menu-area hrrd-menu bg-transparent`}
       >
         <div className="container">
           <nav className="navbar bg-transparent">
             <div className="container-fluid">
               <Link href="/">
                 <a>
-                  <Image
+                  <img
                     src={NavConstant.Logo}
                     alt=""
-                    width="226"
-                    height="55"
                   />
                 </a>
               </Link>
