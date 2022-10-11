@@ -12,7 +12,7 @@ const LayoutAppGrid = () => {
                 data-wow-delay="100ms"
                 data-wow-duration="1500ms"
               >
-                <h1>Crypto Trending News</h1>
+                <h1 className="crypto-heading">Crypto Trending News</h1>
               </div>
             </div>
           </div>

@@ -15,12 +15,17 @@ const Footer = () => {
                     <div className="footer-logo">
                       <Link href="/">
                         <a>
-                          <img src={FooterConstant.Logo} alt="" />
+                          <img
+                            src={FooterConstant.Logo}
+                            width={115}
+                            height={28}
+                            alt=""
+                          />
                         </a>
                       </Link>
                       <p>{FooterConstant.subTitle}</p>
                       <div
-                        className="footer-social wow animate flipInX"
+                        className="footer-social wow animate flipInX mb-5"
                         data-wow-delay="200ms"
                         data-wow-duration="1500ms"
                       >
@@ -66,6 +71,9 @@ const Footer = () => {
                             </Link>
                           </li>
                         </ul>
+                      </div>
+                      <div>
+                        <p>Copyright©coinfo. All right reserved</p>
                       </div>
                     </div>
                   </div>
@@ -195,14 +203,59 @@ const Footer = () => {
           </div>
         </div> */}
         <div className="risk-warning">
-                <h1>Risk Warning</h1>
+          <div className="risk-warning-heading d-flex justify-content-between align-items-center">
+            <div className="risk-warning-headingg align-items-center">
+              <img
+                className="me-2"
+                src="/assets/images/warning-icon.png"
+                alt=""
+              />
+              <h1>Risk Warning</h1>
+            </div>
+            <div className="footer-straight-line">
+              <hr />
+            </div>
+          </div>
+          <div className="risk-warning-content">
+            <p>
+              Cryptocurrencies and their derivatives are innovative financial
+              products with significant volatility and high investment risks.
+            </p>
+            <p>
+              Although COINFO has been committed to providing users with
+              easy-to-use trading services, trading itself is still technically
+              sophisticated. Trading digital assets and their derivatives are
+              highly leveraged and risky and may result in partial or total loss
+              of account funds. You shall carefully consider and exercise clear
+              judgment to evaluate your financial situation and the risks above
+              to make any decision on using COINFO Services, and you shall be
+              responsible for all losses arising therefrom. Please consult
+              relevant professionals to make informed decisions on whether and
+              how to complete investment before you invest if necessary. By
+              accessing, downloading, using, or clicking on “I agree” to accept
+              any of our Services provided by COINFO, you agree that you have
+              read, understood, and accepted all of the terms and conditions
+              stipulated in COINFO's Terms of Use as well as our Privacy Policy.
+            </p>
+            <p>
+              Trading by referring to our signal or other traders involves a
+              high level of risk, even when our trading signal system is
+              top-performing. Cryptocurrencies always contain financial risks.
+              Trading is a highly risky activity that can lead to major losses,
+              please therefore consult your financial advisor before making any
+              decision. Cryptocurrency investment activities are yet to be
+              recognized and protected by the laws in some countries. Please do
+              your own research (DYOR), review, analyse and verify our content
+              before relying on them and performing any activities
+            </p>
+          </div>
         </div>
       </div>
-      <img
+      {/* <img
         className="shape hrrd-footer-shape"
         src="/assets/images/shape/hrrd-footer.png"
         alt=""
-      />
+      /> */}
     </div>
   );
 };

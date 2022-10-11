@@ -383,6 +383,10 @@ input:-webkit-autofill {
   }
 }
 
+.crypto-heading {
+  color: #183b56 !important;
+}
+
 @keyframes up-dn-mark-1 {
   0% {
     transform: translateY(-5px);
@@ -1553,8 +1557,72 @@ input:-webkit-autofill {
     display: inline-block;
     padding: 25px 30px;
     position: absolute;
-    left: -30px;
+    left: 20%;
     top: -10px;
+    animation: up-dn-cart-time 2s alternate linear infinite;
+    h4 {
+      font-family: $circul-std-500;
+      font-size: 17.8494px;
+      letter-spacing: 0.178494px;
+      color: $hrrd-header-color;
+    }
+    .hrrd-hero-post-shape {
+      position: relative;
+      text-align: center;
+      margin: 24px 0px 24px;
+      i {
+        width: 42px;
+        height: 42px;
+        font-size: 16px;
+        color: $ch-header-color;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #ffffff;
+        box-shadow: 0px 14.8745px 34.9551px rgba(0, 0, 0, 0.05);
+        border-radius: 50%;
+      }
+    }
+    ul {
+      line-height: 1;
+      li {
+        display: inline-flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-right: 15px;
+        line-height: 1;
+        &:last-child {
+          margin-right: 0;
+          span {
+            background: #1565d8;
+          }
+        }
+        span {
+          line-height: 0;
+          font-size: 0;
+          display: inline-block;
+          background: #00b8d9;
+          height: 5.35px;
+          width: 5.35px;
+          border-radius: 50%;
+          margin-right: 7px;
+        }
+      }
+    }
+  }
+  .hrrd-hero-post-2 {
+    background: #ffffff;
+    box-shadow: 0px 14.8745px 34.9551px rgba(0, 0, 0, 0.05);
+    border-radius: 7.13976px;
+    display: inline-block;
+    padding: 25px 30px;
+    position: absolute;
+    right: 10%;
+    top: 30%;
     animation: up-dn-cart-time 2s alternate linear infinite;
     h4 {
       font-family: $circul-std-500;
@@ -1617,9 +1685,8 @@ input:-webkit-autofill {
     padding: 24px;
     border-radius: 8.2142px;
     animation: up-dn-cart-like 2s alternate linear infinite;
-    top: 90px;
-    right: 0px;
-    bottom: unset;
+    bottom: 20%;
+    right: 59%;
     left: auto;
     .like-cart-box {
       .like-cart-icon {
@@ -1762,7 +1829,7 @@ input:-webkit-autofill {
   background: #ffffff;
   box-shadow: 0px 29.7349px 68.2154px rgba(0, 0, 0, 0.05);
   border-radius: 20.0099px;
-  padding: 40px;
+  padding: 20px;
   display: inline-block;
   position: absolute;
   top: 0;
@@ -1808,7 +1875,7 @@ input:-webkit-autofill {
   box-shadow: 0px 26.6471px 61.1317px rgba(0, 0, 0, 0.05);
   border-radius: 17.932px;
   display: inline-block;
-  padding: 53px;
+  padding: 25px;
   position: absolute;
   bottom: 41%;
   left: 0;
@@ -1857,8 +1924,8 @@ input:-webkit-autofill {
   padding: 30px;
   display: inline-block;
   position: absolute;
-  bottom: 0;
-  right: 0;
+  bottom: -5%;
+  right: -10%;
   animation: up-dn-cart-time 2.5s alternate linear infinite;
   .time-cart-img-list {
     display: flex;
@@ -2343,24 +2410,24 @@ input:-webkit-autofill {
 
 .hrrd-testimonial-shape {
   left: 0;
-  top: 30%;
-  animation: up-dn 2s alternate linear infinite;
+  top: 15%;
+  // animation: up-dn 2s alternate linear infinite;
 }
 
 /*================================================
 20. Hrrd Subscribe area CSS
 =================================================*/
 .hrrd-subscribe-wrap {
-  background: #F0F9FF;
+  background: #f0f9ff;
   backdrop-filter: blur(100px);
   border-radius: 10px;
   padding: 100px 10px;
   .hrrd-subscribe-title {
-    h1{
-      color: #165CDD;
+    h1 {
+      color: #165cdd;
     }
     p {
-      color: #165CDD;
+      color: #165cdd;
       margin: 30px 0 52px;
     }
   }
@@ -5772,22 +5839,22 @@ Agency Menu Css
     background: white;
     border-radius: 4px;
     padding: 1.875rem;
-    .news-category{
-      color: #5A7184;
+    .news-category {
+      color: #5a7184;
       font-weight: 900;
       font-size: 1rem;
       margin-bottom: 10px;
     }
-    .news-heading{
-      color: #183B56;
+    .news-heading {
+      color: #183b56;
       font-weight: 900;
       font-size: 1.5rem;
       line-height: 34px;
       margin-bottom: 1rem;
     }
-    .news-readmore{
-      button{
-        color: #2873FF;
+    .news-readmore {
+      button {
+        color: #2873ff;
         font-size: 1rem;
         border: none;
         outline: none;
@@ -5798,6 +5865,104 @@ Agency Menu Css
   }
 }
 
-.box-around-text{
-  border: 1px solid #165CDD;
+.box-around-text {
+  border: 1px solid #165cdd;
+}
+
+.risk-warning {
+  margin-bottom: 1rem;
+  .risk-warning-headingg {
+    position: relative;
+    display: flex;
+    box-sizing: border-box;
+    h1 {
+      color: #165cdd;
+      font-size: 2rem;
+      font-weight: 800;
+      margin-right: 1rem;
+    }
+  }
+  .risk-warning-content {
+    p {
+      margin-bottom: 1rem;
+      font-size: 1rem;
+      color: #64748b;
+      text-align: justify;
+    }
+  }
+}
+.feedback-image {
+  border-radius: 50%;
+  z-index: -1;
+}
+.testimonial-img-slide-wrap {
+  i {
+    z-index: 2;
+  }
+}
+.tcsb_nav {
+  button:hover {
+    color: #2873ff !important;
+    transition: 0.2s ease-in-out;
+  }
+  .grey-disabled {
+    color: grey !important;
+  }
+}
+.feedback-customer {
+  .customer-description {
+    font-weight: 900;
+    font-size: 2rem;
+    color: #3b3b3b;
+    line-height: 60px;
+    margin-bottom: 1.75rem;
+  }
+  .customer-name {
+    font-weight: 400;
+    font-size: 1rem;
+    color: #5a7184;
+  }
+  .feedback-avatar {
+    cursor: pointer;
+    border-radius: 50%;
+    margin-right: 1.25rem;
+  }
+  .feedback-avatar-border {
+    border: 5px solid #2873ff;
+    transition: 0.2s ease-in-out;
+  }
+}
+.feedback-behind {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+}
+
+.quote-left {
+  position: absolute;
+  top: 88%;
+  left: 22%;
+  transform: translate(-50%, -50%);
+  font-size: 100px;
+  color: #3b3b3b;
+  z-index: 2;
+}
+
+.footer-straight-line {
+  display: flex;
+  flex: 1;
+}
+
+hr {
+  flex-grow: 1;
+  opacity: 1;
+  color: black;
+}
+
+.info-bg {
+  background: url("/assets/images/shape/feasured-hrrd.png");
+  background-repeat: no-repeat;
+  background-position: right 30% center;
+  background-size: 30%;
 }

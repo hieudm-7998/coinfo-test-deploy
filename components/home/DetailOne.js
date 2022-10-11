@@ -12,11 +12,6 @@ const HomeDetailOne = () => {
             <DetailRight />
           </div>
         </div>
-        <img
-          className="shape everything-left"
-          src="/assets/images/shape/everything-hrrd-left.png"
-          alt=""
-        />
       </div>
     </>
   );

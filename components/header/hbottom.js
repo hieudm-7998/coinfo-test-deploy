@@ -32,8 +32,17 @@ const HBottom = () => {
             </div>
             <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
               <div className="hrrd-hero-img-wrap">
+                <img
+                  className="feedback-behind"
+                  src="assets/images/behind-header.png"
+                  alt=""
+                />
                 <div className="hrrd-hero-img">
-                  <img src={HOMEHEADER.ConverImage} alt="" />
+                  <img
+                    className="img-fluid mx-auto d-block"
+                    src={HOMEHEADER.ConverImage}
+                    alt=""
+                  />
                   <div className="hrrd-hero-post">
                     <h4>Post Type</h4>
                     <div className="hrrd-hero-post-shape">
@@ -62,6 +71,14 @@ const HBottom = () => {
                       </li>
                     </ul>
                   </div>
+                  <div className="hrrd-hero-post-2">
+                    <div className="hrrd-hero-post-shape">
+                      <img
+                        src="assets/images/shape/hrrd-hero-post.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
                   <div className="like-cart hero-like-cart">
                     <div className="like-cart-box">
                       <div className="like-cart-icon">
@@ -78,11 +95,6 @@ const HBottom = () => {
             </div>
           </div>
         </div>
-        <img
-          className="shape hrrd-hero-shape"
-          src="assets/images/shape/hrrd-hero-shape.png"
-          alt=""
-        />
         <img
           className="shape hrrd-hero-shape-top"
           src="assets/images/shape/hrrd-hero-shape-top.png"

@@ -8,8 +8,8 @@ const Header = () => {
   //   const navToggle = useRef(null);
   //   const navHambargar = useRef(null);
 
-    const navRef = useRef();
-    const isVisible = useIsVisible(navRef);
+  const navRef = useRef();
+  const isVisible = useIsVisible(navRef);
 
   // toggle nav
   //   async function ToggleNav() {
@@ -153,18 +153,13 @@ const Header = () => {
           </div>
         </div>
       </nav> */}
-      <div
-        className={`header-menu-area hrrd-menu bg-transparent`}
-      >
+      <div className={`header-menu-area hrrd-menu bg-transparent text-dark`}>
         <div className="container">
           <nav className="navbar bg-transparent">
             <div className="container-fluid">
               <Link href="/">
                 <a>
-                  <img
-                    src={NavConstant.Logo}
-                    alt=""
-                  />
+                  <img src={NavConstant.Logo} width={226} alt="" />
                 </a>
               </Link>
               <div className="d-flex justify-content-center align-items-center">

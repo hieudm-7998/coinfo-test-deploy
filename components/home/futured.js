@@ -3,7 +3,7 @@ import FutureItem from "./futured/item";
 const Futured = () => {
   return (
     <>
-      <div className="featured-area positioning pb-76">
+      <div className="featured-area positioning pb-76 info-bg">
         <div className="container">
           <div className="row">
             <div className="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
@@ -23,43 +23,43 @@ const Futured = () => {
           <div className="row justify-content-center mt-50">
             <FutureItem
               AnimeDelay="400ms"
-              icon="/assets/images/icon/featured-icon-1.png"
+              icon="/assets/images/simplicity.png"
               title="Simplicity"
               desc="Exploring Crypto space easier with the COINFO moblie app."
             />
 
             <FutureItem
               AnimeDelay="500ms"
-              icon="/assets/images/icon/featured-icon-1.png"
+              icon="/assets/images/news-aggre.png"
               title="News Aggregator"
               desc="Up-to-date and reliable news from trustworthy sources"
             />
             <FutureItem
               AnimeDelay="600ms"
-              icon="/assets/images/icon/featured-icon-4.png"
+              icon="/assets/images/trading-signal.png"
               title="Trading Signal"
               desc="Using technical analysis system to assist traders in maximising potential profit"
             />
 
             <FutureItem
               AnimeDelay="700ms"
-              icon="/assets/images/icon/featured-icon-5.png"
+              icon="/assets/images/risk.png"
               title="Risk Management"
               desc="Implementing proper risk management to secure your profit"
             />
             <FutureItem
               AnimeDelay="800ms"
-              icon="/assets/images/icon/featured-icon-3.png"
+              icon="/assets/images/optimising.png"
               title="Optomising experience"
               desc="Real-time signals turn your confusion into clarify"
             />
           </div>
         </div>
-        <img
+        {/* <img
           className="shape featured-shape"
           src="assets/images/shape/feasured-hrrd.png"
           alt=""
-        />
+        /> */}
       </div>
     </>
   );
