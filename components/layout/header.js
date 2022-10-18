@@ -3,7 +3,13 @@ import Link from "next/link";
 import NavConstant from "../../constant/HeaderConstant/NavConstant";
 import Image from "next/image";
 import { useIsVisible } from "react-is-visible";
+import styled from "styled-components";
 
+const Container = styled.div`
+  text-align: center;
+  padding: 27px 0;
+  background-color: #F0F9FF !important;
+`;
 const Header = () => {
   //   const navToggle = useRef(null);
   //   const navHambargar = useRef(null);
@@ -153,26 +159,26 @@ const Header = () => {
           </div>
         </div>
       </nav> */}
-      <div className={`header-menu-area hrrd-menu bg-transparent text-dark`}>
+      <Container>
         <div className="container">
           <nav className="navbar bg-transparent">
             <div className="container-fluid">
               <Link href="/">
                 <a>
-                  <img src={NavConstant.Logo} width={226} alt="" />
+                  <img src={NavConstant.Logo} width={170} alt="" />
                 </a>
               </Link>
               <div className="d-flex justify-content-center align-items-center">
                 <Link href="/">
                   <a className="me-3 fw-bold">Home</a>
                 </Link>
-                <Link href="/">
+                <Link href="/news">
                   <a className="mx-3 fw-bold">News</a>
                 </Link>
                 <Link href="/">
                   <a className="mx-3 fw-bold">Trade Singals</a>
                 </Link>
-                <Link href="/">
+                <Link href="/about-us">
                   <a className="mx-3 fw-bold">About us</a>
                 </Link>
                 <Link href="/">
@@ -220,7 +226,7 @@ const Header = () => {
             </div>
           </nav>
         </div>
-      </div>
+      </Container>
     </>
   );
 };

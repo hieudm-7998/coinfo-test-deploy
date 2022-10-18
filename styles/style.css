@@ -1435,6 +1435,10 @@ input:-webkit-autofill:hover, input:-webkit-autofill:focus {
   -webkit-animation: up-dn-cart-time 2s alternate linear infinite;
           animation: up-dn-cart-time 2s alternate linear infinite;
 }
+.up-down-animation {
+  -webkit-animation: up-dn-cart-time 2s alternate linear infinite;
+          animation: up-dn-cart-time 2s alternate linear infinite;
+}
 .hrrd-hero-img-wrap .hrrd-hero-post h4 {
   font-family: "Circular Std medium";
   font-size: 17.8494px;

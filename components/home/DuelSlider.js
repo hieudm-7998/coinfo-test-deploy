@@ -113,7 +113,7 @@ const HomeDuelSlider = () => {
                   >
                     <i className="bi bi-arrow-right"></i>
                   </button>
-                  <div>
+                  <div className="d-flex my-3">
                     {data.map((item, index) => {
                       return (
                         <img
