@@ -178,7 +178,7 @@ const Header = () => {
                 <Link href="/news-detail">
                   <a className="mx-3 fw-bold">Trade Signals</a>
                 </Link>
-                <Link href="">
+                <Link href="/about-us">
                   <a className="mx-3 fw-bold">About us</a>
                 </Link>
                 <Link href="/">

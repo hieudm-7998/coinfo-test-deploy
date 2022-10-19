@@ -5564,4 +5564,47 @@ hr {
   background-repeat: no-repeat;
   background-position: right 30% center;
   background-size: 30%;
+}
+
+.abu-topbanner {
+  padding: 100px 0;
+}
+.abu-topbanner .abu-leftcol-heading {
+  font-size: 2.5rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  margin-bottom: 2rem;
+  color: #3b3b3b;
+}
+.abu-topbanner .abu-leftcol-info {
+  font-size: 1rem;
+  color: #5a7184;
+  margin-bottom: 1.5rem;
+}
+.abu-topbanner .abu-leftcol-button {
+  background: #165cdd;
+  border-radius: 4px;
+  padding: 0.6rem 2rem;
+}
+.abu-topbanner .abu-rightcol-heading {
+  font-family: "Circular Std black";
+  color: #183b56;
+  font-size: 2.3rem;
+}
+.abu-topbanner .abu-banner-value {
+  display: flex;
+  gap: 10px;
+  border: 1px solid #f3f3f3;
+  border-radius: 8px;
+  padding: 1.25rem;
+  margin-bottom: 1rem;
+}
+.abu-topbanner .abu-banner-value h1 {
+  font-family: "Lato", sans-serif;
+  font-size: 2rem;
+  color: #183b56;
+  font-weight: 800;
+}
+.abu-topbanner .abu-banner-value p {
+  color: #5a7184;
 }/*# sourceMappingURL=style.css.map */

@@ -5975,3 +5975,46 @@ hr {
   background-position: right 30% center;
   background-size: 30%;
 }
+
+.abu-topbanner {
+  padding: 100px 0;
+  .abu-leftcol-heading {
+    font-size: 2.5rem;
+    font-family: $fontparagraph-1;
+    font-weight: 900;
+    margin-bottom: 2rem;
+    color: #3b3b3b;
+  }
+  .abu-leftcol-info {
+    font-size: 1rem;
+    color: #5a7184;
+    margin-bottom: 1.5rem;
+  }
+  .abu-leftcol-button {
+    background: #165cdd;
+    border-radius: 4px;
+    padding: 0.6rem 2rem;
+  }
+  .abu-rightcol-heading {
+    font-family: $circul-std-900;
+    color: #183b56;
+    font-size: 2.3rem;
+  }
+  .abu-banner-value {
+    display: flex;
+    gap: 10px;
+    border: 1px solid #f3f3f3;
+    border-radius: 8px;
+    padding: 1.25rem;
+    margin-bottom: 1rem;
+    h1 {
+      font-family: $fontheader-1;
+      font-size: 2rem;
+      color: #183b56;
+      font-weight: 800;
+    }
+    p {
+      color: #5a7184;
+    }
+  }
+}
