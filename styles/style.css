@@ -99,6 +99,7 @@ Edu Menu
 /* Circular Std Font Variables */
 /* Circular Std Font End */
 a {
+  font-family: "Circular Std regular";
   color: unset;
   text-decoration: none;
 }
@@ -122,7 +123,7 @@ h4,
 h5,
 h6 {
   margin-bottom: 0;
-  font-family: "Lato", sans-serif;
+  font-family: "Circular Std regular";
   color: #183b56;
 }
 
@@ -131,11 +132,18 @@ body {
   font-weight: 400;
   line-height: 1.6;
   color: #5a7184;
-  font-family: "Lato", sans-serif;
+  font-family: "Circular Std regular" !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 p {
+  font-family: "Circular Std regular";
   margin-bottom: 0;
+}
+
+button {
+  font-family: "Circular Std regular" !important;
 }
 
 input:focus,
@@ -148,6 +156,7 @@ ul {
   margin: 0;
   padding: 0;
   list-style: none;
+  font-family: "Circular Std regular";
 }
 
 i.bx {
@@ -1432,10 +1441,6 @@ input:-webkit-autofill:hover, input:-webkit-autofill:focus {
   position: absolute;
   left: 20%;
   top: -10px;
-  -webkit-animation: up-dn-cart-time 2s alternate linear infinite;
-          animation: up-dn-cart-time 2s alternate linear infinite;
-}
-.up-down-animation {
   -webkit-animation: up-dn-cart-time 2s alternate linear infinite;
           animation: up-dn-cart-time 2s alternate linear infinite;
 }

@@ -1,27 +1,29 @@
 import React from "react";
 import DefaultLayout from "../components/layout/default";
-import ListRecentPost from "../components/about-us/post/recent/ListRecentPost";
-import StayInTouch from "../components/about-us/StayInTouch";
-import NewsDescription from "../components/news/NewsDescription";
-import TagsBlock from "../components/news/TagsBlock";
-import ContentBlock from "../components/news/ContentBlock";
+import ListRecentPost from "../components/news-detail/post/recent/ListRecentPost";
+import StayInTouch from "../components/news-detail/StayInTouch";
+import TrendTopicSwiper from "../components/news-detail/TrendTopicSwiper";
+import MenuBar from "../components/news-detail/menu-bar/MenuBar";
+import TopNewsBanner from "../components/news-detail/post/news-banner/TopNewsBanner";
+import ListRealatedPost from "../components/news-detail/post/related/ListRelatedPost";
 import { Grid, GridItem, Box } from "@chakra-ui/react";
-import { recentPostData } from "../constant/news/index";
+import {
+  recentPostData,
+  trendingTopics,
+  relatedPost,
+} from "../constant/news/index";
 
-const NewsPage = () => {
+const AboutUs = () => {
   const desktopComponent = (
-    <Box mt={20} px={35}>
-      <Grid templateColumns="repeat(10, 1fr)" gap={20}>
+    <Box w={4 / 5} mx="auto">
+      <MenuBar />
+      <TopNewsBanner data={recentPostData} />
+      <TrendTopicSwiper title="Learn2Earn" data={trendingTopics} />
+      <Grid pt={20} templateColumns="repeat(3, 1fr)" gap={20}>
         <GridItem colSpan={2}>
-          <Box mb={6}>
-            <ContentBlock />
-          </Box>
-          <TagsBlock />
+          <ListRealatedPost listData={relatedPost} />
         </GridItem>
-        <GridItem colSpan={5}>
-          <NewsDescription />
-        </GridItem>
-        <GridItem colSpan={3}>
+        <GridItem colSpan={1}>
           <ListRecentPost recentPostData={recentPostData} />
           <StayInTouch />
         </GridItem>
@@ -31,4 +33,4 @@ const NewsPage = () => {
 
   return <DefaultLayout desktopComponent={desktopComponent} />;
 };
-export default NewsPage;
+export default AboutUs;

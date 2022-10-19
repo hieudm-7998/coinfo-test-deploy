@@ -4,7 +4,7 @@ import FooterConstant from "../../constant/FooterConstant/FooterConstant";
 
 const Footer = () => {
   return (
-    <div className="footer-area hrrd-footer-area positioning pb-100">
+    <div className="footer-area hrrd-footer-area positioning py-5">
       <div className="container">
         <div className="row">
           <div className="col-xl-12 col-lg-12 col-sm-12 col-12">
@@ -203,7 +203,7 @@ const Footer = () => {
           </div>
         </div> */}
         <div className="risk-warning">
-          <div className="risk-warning-heading d-flex justify-content-between align-items-center">
+          <div className="risk-warning-heading mb-3 d-flex justify-content-between align-items-center">
             <div className="risk-warning-headingg align-items-center">
               <img
                 className="me-2"
@@ -235,7 +235,8 @@ const Footer = () => {
               accessing, downloading, using, or clicking on “I agree” to accept
               any of our Services provided by COINFO, you agree that you have
               read, understood, and accepted all of the terms and conditions
-              stipulated in COINFO's Terms of Use as well as our Privacy Policy.
+              stipulated in COINFO&apos;s Terms of Use as well as our Privacy
+              Policy.
             </p>
             <p>
               Trading by referring to our signal or other traders involves a

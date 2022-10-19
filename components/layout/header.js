@@ -7,8 +7,8 @@ import styled from "styled-components";
 
 const Container = styled.div`
   text-align: center;
-  padding: 27px 0;
-  background-color: #F0F9FF !important;
+  padding: 15px 0;
+  background-color: #f0f9ff !important;
 `;
 const Header = () => {
   //   const navToggle = useRef(null);
@@ -161,7 +161,7 @@ const Header = () => {
       </nav> */}
       <Container>
         <div className="container">
-          <nav className="navbar bg-transparent">
+          <nav className="navbar">
             <div className="container-fluid">
               <Link href="/">
                 <a>
@@ -175,10 +175,10 @@ const Header = () => {
                 <Link href="/news">
                   <a className="mx-3 fw-bold">News</a>
                 </Link>
-                <Link href="/">
-                  <a className="mx-3 fw-bold">Trade Singals</a>
+                <Link href="/news-detail">
+                  <a className="mx-3 fw-bold">Trade Signals</a>
                 </Link>
-                <Link href="/about-us">
+                <Link href="">
                   <a className="mx-3 fw-bold">About us</a>
                 </Link>
                 <Link href="/">

@@ -17,7 +17,7 @@ const HBottom = () => {
                   The <span className="header-title-blue">code</span> to your{" "}
                   <span className="header-title-blue">freedom</span>
                 </h1>
-                <h4 className="header-subtitle mb-3">
+                <h4 className="header-subtitle mb-5">
                   We analyse signals to navigate your investment and leverage
                   your income, getting you faster to the journey of freedom.
                 </h4>
@@ -49,6 +49,7 @@ const HBottom = () => {
                       <img
                         src="assets/images/shape/hrrd-hero-post.png"
                         alt=""
+                        className="d-block mx-auto"
                       />
                       <Link href="/">
                         <a>

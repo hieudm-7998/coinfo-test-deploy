@@ -11,11 +11,11 @@ import {
 import { SearchIcon } from "@chakra-ui/icons";
 const menuItems = [
   {
-    name: "Tin mới",
+    name: "News",
     link: "news",
   },
   {
-    name: "Tin nóng",
+    name: "Trends",
     link: "news",
   },
   {

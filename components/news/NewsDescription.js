@@ -1,9 +1,9 @@
 import React from "react";
 import { Box, Flex, Img, Text } from "@chakra-ui/react";
-import SocialMediaBlock from "../about-us/SocialMediaBlock";
+import SocialMediaBlock from "../news-detail/SocialMediaBlock";
 function NewsDescription(props) {
   return (
-    <Box color='rgba(0, 0, 0, 1)'>
+    <Box color="rgba(0, 0, 0, 1)">
       <Box bg="#F8FAFC" rounded={20} p={35} mb={9}>
         <Img src="/assets/images/mock-img/news-des.png" rounded={20} mb={7} />
 
@@ -19,12 +19,7 @@ function NewsDescription(props) {
           <SocialMediaBlock size={32} />
         </Flex>
 
-        <Text
-          className="title-block"
-          fontWeight="bold"
-          fontSize={32}
-          mb={7}
-        >
+        <Text className="title-block" fontWeight="bold" fontSize={32} mb={7}>
           Competitive Advantage in a Commoditized Industry
         </Text>
 
@@ -78,7 +73,14 @@ function NewsDescription(props) {
         </Text>
       </Box>
 
-      <Box className="summary-block" px={20} py={8} bg="#F8FAFC" rounded={20} mb={7}>
+      <Box
+        className="summary-block"
+        px={20}
+        py={8}
+        bg="#F8FAFC"
+        rounded={20}
+        mb={7}
+      >
         <Text className="user-name" fontSize={20} fontWeight={800}>
           Disclaimer:
         </Text>
