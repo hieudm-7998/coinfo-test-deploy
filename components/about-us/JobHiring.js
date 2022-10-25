@@ -65,7 +65,7 @@ export default function JobHiring() {
         <div className="d-flex justify-content-between align-items-center mb-5">
           <div>
             <h1 className="abu-job-heading">
-              Work <span>with Us!</span>
+              Work <span className="brd-btm-blue">with Us!</span>
             </h1>
             <h2 className="abu-job-subheading">Open vacancies</h2>
           </div>

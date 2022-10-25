@@ -24,7 +24,9 @@ function TopBanner() {
       <div className="container">
         <div className="row">
           <div className="col-lg-4">
-            <h1 className="abu-leftcol-heading">Welcome to COINFO</h1>
+            <h1 className="abu-leftcol-heading">
+              <span className="box-around-text">Welcome </span>to COINFO
+            </h1>
             <p className="abu-leftcol-info">
               We’ve gathered trending insight news and trade signal to keep you
               on the fast track to trading success.
@@ -43,7 +45,7 @@ function TopBanner() {
           <div className="col-lg-4">
             <h1 className="abu-rightcol-heading">Core Principles</h1>
             <h1 className="abu-rightcol-heading mb-5">
-              Platform <span className="abu-span">Work!</span>
+              Platform <span className="brd-btm-blue ">Work!</span>
             </h1>
             {TopBannerVariant.map((item, index) => {
               return (

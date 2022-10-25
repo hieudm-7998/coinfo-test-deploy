@@ -6098,7 +6098,7 @@ hr {
   }
 }
 
-.abu-job-bg{
+.abu-job-bg {
   background: url("/assets/images/abu-job-bg.png");
   background-size: auto;
   background-repeat: no-repeat;
@@ -6111,13 +6111,6 @@ hr {
     font-weight: 700;
     font-size: 2.5rem;
     color: #183b56;
-    span {
-      border-bottom: 15px solid #5c8de7;
-      display: inline-block;
-      line-height: 0.2em;
-      position: relative;
-      padding-bottom: 0px;
-    }
   }
   .abu-job-subheading {
     font-size: 2rem;
@@ -6131,6 +6124,14 @@ hr {
     font-weight: 700;
     border-radius: 10px;
   }
+}
+
+.brd-btm-blue {
+  border-bottom: 15px solid #5c8de7;
+  display: inline-block;
+  line-height: 0.2em;
+  position: relative;
+  padding-bottom: 0px;
 }
 
 .abu-job-block {

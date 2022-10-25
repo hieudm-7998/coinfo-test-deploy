@@ -5704,13 +5704,6 @@ hr {
   font-size: 2.5rem;
   color: #183b56;
 }
-.abu-job .abu-job-heading span {
-  border-bottom: 15px solid #5c8de7;
-  display: inline-block;
-  line-height: 0.2em;
-  position: relative;
-  padding-bottom: 0px;
-}
 .abu-job .abu-job-subheading {
   font-size: 2rem;
   color: #183b56;
@@ -5722,6 +5715,14 @@ hr {
   color: white;
   font-weight: 700;
   border-radius: 10px;
+}
+
+.brd-btm-blue {
+  border-bottom: 15px solid #5c8de7;
+  display: inline-block;
+  line-height: 0.2em;
+  position: relative;
+  padding-bottom: 0px;
 }
 
 .abu-job-block {
