@@ -5521,12 +5521,14 @@ Agency Menu Css
   font-size: 1rem;
   color: #5a7184;
 }
-.feedback-customer .feedback-avatar {
+
+.feedback-avatar {
   cursor: pointer;
   border-radius: 50%;
   margin-right: 1.25rem;
 }
-.feedback-customer .feedback-avatar-border {
+
+.feedback-avatar-border {
   border: 5px solid #2873ff;
   transition: 0.2s ease-in-out;
 }
@@ -5607,4 +5609,153 @@ hr {
 }
 .abu-topbanner .abu-banner-value p {
   color: #5a7184;
+}
+
+.abu-customer-slide {
+  background: #f0f9ff;
+  padding: 100px 0;
+}
+.abu-customer-slide .abu-customer-slider-heading {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #221314;
+  font-family: "Circular Std black";
+}
+.abu-customer-slide .abu-customer-slider-heading span {
+  background: url("/assets/images/abu-heading-border.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+}
+.abu-customer-slide .abu-customer-slider-info {
+  color: #625858;
+  font-size: 1rem;
+}
+.abu-customer-slide .abu-customer-slide-viewall-btn {
+  background: #165cdd;
+  padding: 1rem 2rem;
+}
+
+.abu-customer-slide-block {
+  position: relative;
+}
+.abu-customer-slide-block .abu-customer-slide-block-info {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  width: 100%;
+  align-items: end;
+  justify-content: space-between;
+  padding: 0 10px;
+  padding-bottom: 10px;
+}
+.abu-customer-slide-block .abu-customer-slide-block-info h1,
+.abu-customer-slide-block .abu-customer-slide-block-info p {
+  color: white;
+}
+
+.bg-ourteam {
+  background: url("/assets/images/our-team.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+}
+
+.abu-customer-feedback {
+  padding: 300px 0 200px 0;
+  background: url("/assets/images/abu-customer-feedback-bg.png");
+  background-repeat: no-repeat;
+  background-size: 85%;
+  background-position: center;
+}
+.abu-customer-feedback h3 {
+  font-family: "Lato", sans-serif;
+  font-size: 1.75rem;
+  line-height: 50px;
+}
+.abu-customer-feedback h1 {
+  color: rgba(40, 115, 255, 0.9);
+  font-family: "Lato", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.abu-customer-feedback h4 {
+  color: #5a7184;
+  font-family: "Lato", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.abu-job-bg {
+  background: url("/assets/images/abu-job-bg.png");
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.abu-job {
+  padding-top: 100px;
+}
+.abu-job .abu-job-heading {
+  font-family: "Circular Std bold";
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #183b56;
+}
+.abu-job .abu-job-heading span {
+  border-bottom: 15px solid #5c8de7;
+  display: inline-block;
+  line-height: 0.2em;
+  position: relative;
+  padding-bottom: 0px;
+}
+.abu-job .abu-job-subheading {
+  font-size: 2rem;
+  color: #183b56;
+  font-weight: 400;
+}
+.abu-job .abu-job-viewalljob {
+  background: #165cdd;
+  padding: 0.5rem 2.25rem;
+  color: white;
+  font-weight: 700;
+  border-radius: 10px;
+}
+
+.abu-job-block {
+  margin-bottom: 100px;
+  padding: 2rem 1.75rem;
+  background: #ffffff;
+  box-shadow: 5px 30px 56.1276px rgba(55, 55, 55, 0.1098);
+  border-radius: 16.8383px;
+}
+.abu-job-block .abu-job-block-header .abu-job-post-badge {
+  padding: 5px 10px;
+  color: #165cdd;
+  background: #f5f9ff;
+  border-radius: 5px;
+}
+.abu-job-block .abu-job-block-header p {
+  color: #5a7184;
+  font-family: "Circular Std regular";
+  font-size: 1rem;
+  font-weight: 400;
+}
+.abu-job-block .abu-job-block-body h1 {
+  color: #183b56;
+  font-weight: 600;
+  font-family: "Circular Std bold";
+  font-size: 1.4rem;
+}
+.abu-job-block .abu-job-block-footer h1 {
+  color: #183b56;
+  font-size: 1rem;
+  font-weight: 700;
+}
+.abu-job-block .abu-job-block-footer p {
+  color: #165cdd;
+  font-family: "Circular Std bold";
+  font-size: 1rem;
 }/*# sourceMappingURL=style.css.map */
