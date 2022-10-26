@@ -5236,6 +5236,7 @@ Agency Menu Css
 
 .cart-wrap {
   .single-cart {
+    background: #f0f9ff;
     margin-bottom: 24px;
     border: 2px solid rgba(102, 159, 246, 0.3);
     box-sizing: border-box;
@@ -5412,7 +5413,7 @@ Agency Menu Css
       .contact-details-info {
         ul {
           li {
-            color: $hrrd-text-color;
+            color: black;
             display: flex;
             align-items: center;
             margin-bottom: 8px;
@@ -5427,7 +5428,7 @@ Agency Menu Css
             }
             i {
               font-size: 20px;
-              color: $hrrd-primary-color;
+              color: black;
               margin-right: 15px;
               transition: color 0.25s ease-in-out;
             }
@@ -5512,13 +5513,6 @@ Agency Menu Css
     &.success {
       color: green;
     }
-  }
-  h1 {
-    font-family: $circul-std-900;
-    font-style: normal;
-    font-size: 48px;
-    color: $hrrd-header-color;
-    margin-bottom: 39px;
   }
   textarea,
   input {
@@ -6173,5 +6167,49 @@ hr {
       font-family: $circul-std-700;
       font-size: 1rem;
     }
+  }
+}
+
+.contact-area {
+  padding: 100px 0;
+  .contact-title {
+    h1 {
+      font-family: $fontheader-1;
+      font-weight: 900;
+      font-size: 2.5rem;
+      color: #3b3b3b;
+    }
+    .contact-title-underscore {
+      border-bottom: 2px solid #165cdd;
+    }
+  }
+  .contact-area-bg {
+    background: #f0f9ff;
+    border-radius: 20px;
+  }
+  .contact-area-label {
+    color: #000000;
+    font-size: 1rem;
+    font-weight: 700;
+  }
+}
+
+.contact-accordion {
+  background: #f0f9ff;
+  border: 1px solid #165cdd;
+  border-radius: 20px;
+  padding: 1.75rem 1.5rem;
+}
+
+.chakra-accordion__item {
+  border: none;
+  background: white;
+  margin-bottom: 10px;
+}
+
+.contact-area-input {
+  &:focus {
+    border: 1px solid #2873ff;
+    transition: 0.2s ease-in;
   }
 }

@@ -181,7 +181,7 @@ const Header = () => {
                 <Link href="/about-us">
                   <a className="mx-3 fw-bold">About us</a>
                 </Link>
-                <Link href="/">
+                <Link href="/contact">
                   <a className="mx-3 fw-bold">Roadmap</a>
                 </Link>
                 <Link href="/">
