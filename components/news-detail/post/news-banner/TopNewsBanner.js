@@ -17,23 +17,30 @@ const relatedData = {
 
 function TopNewsBanner({ data }) {
   return (
-    <Grid p={5} pb={20} templateColumns="repeat(7, 1fr)" gap={20}>
-      <GridItem position='relative' colSpan={4}>
-        <Img src="/assets/images/mock-img/news-img.png" w="100%" />
-        <Box position='absolute' bottom={-50} left='50%' transform='translate(-50%, 0)' w={3/4}>
-        <div className="up-down-animation">
-          <RelatedPostItem data={relatedData} />
+    <div className="row" style={{ marginBottom: "100px" }}>
+      <div className="col-12 col-md-6 position-relative">
+        <img src="/assets/images/mock-img/news-img.png" className="img-fluid" />
+        <div
+          className="position-absolute w-75"
+          style={{
+            bottom: "-50px",
+            left: "50%",
+            transform: "translate(-50%, 0)",
+          }}
+        >
+          <div className="up-down-animation">
+            <RelatedPostItem data={relatedData} />
           </div>
-        </Box>
-      </GridItem>
-      <GridItem colSpan={3}>
-        <Flex flexDirection="column" justifyContent="space-between" h="100%">
+        </div>
+      </div>
+      <div className="col-12 col-md-6 position-relative">
+        <div className="d-flex flex-column justify-content-between align-items-center">
           {data.map((item, index) => {
             return <PostItem key={index} data={item} hasSocialIcons />;
           })}
-        </Flex>
-      </GridItem>
-    </Grid>
+        </div>
+      </div>
+    </div>
   );
 }
 

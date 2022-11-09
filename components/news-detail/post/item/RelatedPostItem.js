@@ -23,7 +23,7 @@ function RelatedPostItem({
         w="100%"
         border="1px solid rgba(88, 146, 255, 1)"
         rounded={20}
-        p={4}
+        p={5}
       >
         <Text color="#165cdd" fontWeight={600} mb={7}>
           {topic}

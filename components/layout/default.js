@@ -6,12 +6,12 @@ import Footer from "./footer";
 
 function DefaultLayout({ desktopComponent, tabletComponent, mobileComponent }) {
   return (
-    <Box overflow='hidden'>
+    <Box overflow="hidden">
       <Header />
-      <Box display={{ lg: "block", base: "none" }}>{desktopComponent}</Box>
-      <Box display={{ md: "block", base: "none" }}></Box>
-      <Box display={{ sm: "block", base: "none" }}></Box>
-      <LayoutNewsLater />
+      {/* <Box display={{ lg: "block" }}>{desktopComponent}</Box>
+      <Box display={{ md: "block" }}></Box>
+      <Box display={{ sm: "block" }}></Box> */}
+      {/* <LayoutNewsLater /> */}
       <Footer />
     </Box>
   );

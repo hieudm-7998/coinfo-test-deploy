@@ -5793,4 +5793,25 @@ hr {
 .contact-area-input:focus {
   border: 1px solid #2873ff;
   transition: 0.2s ease-in;
+}
+
+.news-link-active {
+  font-weight: 700;
+  color: black !important;
+  display: inline-block;
+  position: relative;
+}
+.news-link-active::before {
+  transform: translateX(-50%);
+  border-radius: 100%;
+  position: absolute;
+  background: blue;
+  bottom: 5px;
+  height: 8px;
+  content: "";
+  width: 8px;
+  left: 50%;
+}
+.news-link-active:hover {
+  color: black;
 }/*# sourceMappingURL=style.css.map */
