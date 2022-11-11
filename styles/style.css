@@ -5814,4 +5814,25 @@ hr {
 }
 .news-link-active:hover {
   color: black;
+}
+
+.news-top-banner {
+  margin-bottom: 200px;
+}
+.news-top-banner .news-top-new-popup {
+  position: absolute;
+  width: 75%;
+  bottom: -150px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+@media screen and (min-width: 768px) {
+  .news-top-banner .news-top-new-popup {
+    bottom: -50px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .news-top-banner {
+    margin-bottom: 0;
+  }
 }/*# sourceMappingURL=style.css.map */

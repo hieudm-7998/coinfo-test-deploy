@@ -31,7 +31,7 @@ function RelatedPostItem({
         <Text
           color="#1B2537"
           fontWeight="bold"
-          fontSize="40px"
+          fontSize="1.75rem"
           lineHeight="44px"
         >
           {title}

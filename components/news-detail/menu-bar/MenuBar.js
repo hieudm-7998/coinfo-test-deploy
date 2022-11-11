@@ -34,9 +34,6 @@ const menuItems = [
 
 function MenuBar(props) {
   const router = useRouter();
-  useEffect(() => {
-    console.log(router.pathname);
-  }, []);
 
   return (
     // <Grid p={5} templateColumns="repeat(3, 1fr)" gap={4}>

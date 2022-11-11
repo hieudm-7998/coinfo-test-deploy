@@ -18,16 +18,9 @@ const relatedData = {
 function TopNewsBanner({ data }) {
   return (
     <div className="row" style={{ marginBottom: "100px" }}>
-      <div className="col-12 col-md-6 position-relative">
+      <div className="col-12 col-md-6 position-relative news-top-banner">
         <img src="/assets/images/mock-img/news-img.png" className="img-fluid" />
-        <div
-          className="position-absolute w-75"
-          style={{
-            bottom: "-50px",
-            left: "50%",
-            transform: "translate(-50%, 0)",
-          }}
-        >
+        <div className="news-top-new-popup">
           <div className="up-down-animation">
             <RelatedPostItem data={relatedData} />
           </div>

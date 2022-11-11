@@ -6234,3 +6234,62 @@ hr {
     color: black;
   }
 }
+
+// Breakpoint Mixin
+
+$min-xs: 375px;
+$min-sm: 576px;
+$min-md: 768px;
+$min-lg: 992px;
+$min-xl: 1200px;
+
+// min screen 375px
+@mixin min-xs {
+  @media screen and (min-width: $min-xs) {
+    @content;
+  }
+}
+
+// min screen 576px
+@mixin min-sm {
+  @media screen and (min-width: $min-sm) {
+    @content;
+  }
+}
+
+// min screen 768px
+@mixin min-md {
+  @media screen and (min-width: $min-md) {
+    @content;
+  }
+}
+
+// min screen 992px
+@mixin min-lg {
+  @media screen and (min-width: $min-lg) {
+    @content;
+  }
+}
+
+// min screen 1200px
+@mixin min-xl {
+  @media screen and (min-width: $min-xl) {
+    @content;
+  }
+}
+.news-top-banner {
+  margin-bottom: 200px;
+  .news-top-new-popup {
+    position: absolute;
+    width: 75%;
+    bottom: -150px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    @include min-md() {
+      bottom: -50px;
+    }
+  }
+  @include min-md() {
+    margin-bottom: 0;
+  }
+}
