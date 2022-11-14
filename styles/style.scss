@@ -6293,3 +6293,49 @@ $min-xl: 1200px;
     margin-bottom: 0;
   }
 }
+
+.news-top-new-postitem {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  @include min-md() {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.channel-and-time {
+  color: #64748b;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  @include min-md() {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.mb-mobile {
+  margin-bottom: 1rem;
+  @include min-md() {
+    margin: 0;
+  }
+}
+
+.news-nav-link {
+  font-size: 1rem;
+  @include min-md() {
+    font-size: 1.5rem;
+  }
+}
+
+.news-swiper-header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  @include min-md() {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

@@ -17,19 +17,23 @@ const NewsLayout = dynamic(() => import("../../components/layout/News"), {
 
 export default function News() {
   return (
-    <>
-      <TopNewsBanner data={recentPostData} />
+    <div>
+      <div className="container">
+        <TopNewsBanner data={recentPostData} />
+      </div>
       <TrendTopicSwiper title="Learn2Earn" data={trendingTopics} />
-      <Grid pt={20} templateColumns="repeat(3, 1fr)" gap={20}>
-        <GridItem colSpan={2}>
-          <ListRealatedPost listData={relatedPost} />
-        </GridItem>
-        <GridItem colSpan={1}>
-          <ListRecentPost recentPostData={recentPostData} />
-          <StayInTouch />
-        </GridItem>
-      </Grid>
-    </>
+      <div className="container">
+        <div className="row my-5">
+          <div className="col-12 col-md-8">
+            <ListRealatedPost listData={relatedPost} />
+          </div>
+          <div className="col-12 col-md-4">
+            <ListRecentPost recentPostData={recentPostData} />
+            <StayInTouch />
+          </div>
+        </div>
+      </div>
+    </div>
   );
 }
 

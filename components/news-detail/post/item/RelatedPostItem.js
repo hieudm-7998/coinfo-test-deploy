@@ -15,54 +15,45 @@ function RelatedPostItem({
   hasImage,
 }) {
   return (
-    <Flex gap={8} minHeight="300px">
+    <div
+      className="d-flex flex-column w-100 bg-white p-3"
+      style={{
+        border: "1px solid rgba(88, 146, 255, 1)",
+        borderRadius: "20px",
+      }}
+    >
       {hasImage && <Img src="/assets/images/mock-img/graph.png" />}
-      <Box
-        position="relative"
-        bg="#fff"
-        w="100%"
-        border="1px solid rgba(88, 146, 255, 1)"
-        rounded={20}
-        p={5}
-      >
-        <Text color="#165cdd" fontWeight={600} mb={7}>
+      <div>
+        <Text color="#165cdd" fontWeight={600} className="mb-3">
           {topic}
         </Text>
         <Text
           color="#1B2537"
-          fontWeight="bold"
+          fontWeight="700"
           fontSize="1.75rem"
-          lineHeight="44px"
+          className="mb-3"
         >
           {title}
         </Text>
-        <Box
-          className="bottom-block"
-          position="absolute"
-          bottom={4}
-          left={4}
-          right={4}
-        >
-          <Flex alignItems="center" justifyContent="space-between">
-            <Flex className="user-info" alignItems="center" gap={2}>
-              <Img src={user.avatar} width={55} />
-              <Box>
-                <Text className="user-name" fontWeight={600}>
-                  {user.name}
-                </Text>
-                <Flex alignItems="center" gap={2}>
-                  <Text fontSize={12}>{channel}</Text> <Dot />{" "}
-                  <Text fontSize={12}>{time}</Text>
-                </Flex>
-              </Box>
+      </div>
+      <div className="news-top-new-postitem">
+        <Flex className="user-info" alignItems="center" gap={2}>
+          <Img src={user.avatar} width={55} />
+          <Box>
+            <Text className="user-name" fontWeight={600}>
+              {user.name}
+            </Text>
+            <Flex alignItems="center" gap={2}>
+              <Text fontSize={12}>{channel}</Text> <Dot />{" "}
+              <Text fontSize={12}>{time}</Text>
             </Flex>
-            <Box className="media-block">
-              <SocialMediaBlock size={32} />
-            </Box>
-          </Flex>
+          </Box>
+        </Flex>
+        <Box className="media-block">
+          <SocialMediaBlock size={32} />
         </Box>
-      </Box>
-    </Flex>
+      </div>
+    </div>
   );
 }
 

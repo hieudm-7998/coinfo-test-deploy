@@ -4,12 +4,6 @@ import styled from "styled-components";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 
-const Header = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 40px;
-`;
 const SeeAll = styled.p`
   color: #165cdd;
   font-size: 20px;
@@ -58,18 +52,12 @@ function TrendTopicSlider({ title, data }) {
   }, [swiperIndex]);
 
   return (
-    <Box
-      bg="#f0f9ff"
-      p="65px"
-      w="100vw"
-      position="relative"
-      left="calc(-50vw + 50%)"
-    >
+    <Box bg="#f0f9ff" p="65px" w="100%" position="relative">
       <Content>
-        <Header>
+        <div className="news-swiper-header">
           <Title>{title}</Title>
           <SeeAll>See all categories </SeeAll>
-        </Header>
+        </div>
         <SwiperBlock>
           <NavigationItem
             src="../assets/images/arrow-circle-left.png"

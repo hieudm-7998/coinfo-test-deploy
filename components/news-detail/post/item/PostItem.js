@@ -2,8 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import SocialMediaBlock from "../../SocialMediaBlock";
 const PostItemBlock = styled.div`
-  margin-bottom: 1rem;
-  padding-bottom: 1rem;
   display: flex;
   gap: 18px;
   text-align: left;
@@ -29,14 +27,6 @@ const Title = styled.p`
   line-height: ${(props) => (props.hasSocialIcons ? "35px" : "24px")};
 `;
 
-const ChannelAndTime = styled.div`
-  position: absolute;
-  bottom: 0;
-  color: #64748b;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-`;
 const Dot = styled.div`
   width: 4px;
   height: 4px;
@@ -49,15 +39,19 @@ function PostItem({
   hasSocialIcons,
 }) {
   return (
-    <PostItemBlock hasSocialIcons={hasSocialIcons}>
+    <PostItemBlock className="py-3" hasSocialIcons={hasSocialIcons}>
       <PostImage src={image} alt={channel} />
       <DescriptionBlock>
         <Topic>{topic}</Topic>
-        <Title hasSocialIcons={hasSocialIcons}>{title}</Title>
-        <ChannelAndTime>
-          {channel} <Dot /> {time}
+        <Title className="my-2" hasSocialIcons={hasSocialIcons}>
+          {title}
+        </Title>
+        <div className="channel-and-time">
+          <div className="d-flex align-items-center" style={{ gap: "10px" }}>
+            {channel} <Dot /> {time}
+          </div>
           {hasSocialIcons && <SocialMediaBlock size={32} />}
-        </ChannelAndTime>
+        </div>
       </DescriptionBlock>
     </PostItemBlock>
   );

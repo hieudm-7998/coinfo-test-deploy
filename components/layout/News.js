@@ -23,8 +23,8 @@ export default function NewsLayout({ children }) {
       <Header />
       <Container>
         <MenuBar />
-        {children}
       </Container>
+      {children}
       <Footer />
     </ChakraProvider>
   );

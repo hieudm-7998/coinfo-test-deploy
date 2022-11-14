@@ -8,7 +8,10 @@ const PostBlock = styled.div``;
 
 const ListRecentPost = ({ recentPostData }) => {
   return (
-    <Box textAlign="center" px={6} py={3} bg="#f8fafc" rounded={20} mb={5}>
+    <div
+      className="text-center px-3 py-3 mb-5"
+      style={{ background: "#f8fafc", borderRadius: "20px" }}
+    >
       <Grid>
         <GridItem>
           <Text mb={4} fontWeight="bold" fontSize={32}>
@@ -16,14 +19,12 @@ const ListRecentPost = ({ recentPostData }) => {
           </Text>
         </GridItem>
         <GridItem>
-          <PostBlock>
-            {recentPostData.map((item, index) => {
-              return <PostItem key={index} data={item} />;
-            })}
-          </PostBlock>
+          {recentPostData.map((item, index) => {
+            return <PostItem key={index} data={item} />;
+          })}
         </GridItem>
       </Grid>
-    </Box>
+    </div>
   );
 };
 

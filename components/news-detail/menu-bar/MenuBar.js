@@ -68,58 +68,54 @@ function MenuBar(props) {
       <div className="d-flex">
         <Link href="/news/tin-moi" passHref>
           <Nav.Link
-            className={
+            className={`news-nav-link ${
               router.pathname == `/news/tin-moi` ? "news-link-active" : ""
-            }
-            style={{ fontSize: "1.5rem", color: "#8E9BAE" }}
+            }`}
           >
             News
           </Nav.Link>
         </Link>
         <Link href="/news/tin-nong" fontSize="23px" passHref>
           <Nav.Link
-            className={
+            className={`news-nav-link ${
               router.pathname == `/news/tin-nong` ? "news-link-active" : ""
-            }
-            style={{ fontSize: "1.5rem", color: "#8E9BAE" }}
+            }`}
           >
             Bitcoin
           </Nav.Link>
         </Link>
         <Link href="/news/bitcoin" fontSize="23px" passHref>
           <Nav.Link
-            className={
+            className={`news-nav-link ${
               router.pathname == `/news/bitcoin` ? "news-link-active" : ""
-            }
-            style={{ fontSize: "1.5rem", color: "#8E9BAE" }}
+            }`}
           >
             Altcoin
           </Nav.Link>
         </Link>
         <Link href="/news/altcoin" fontSize="23px" passHref>
           <Nav.Link
-            className={
+            className={`news-nav-link ${
               router.pathname == `/news/altcoin` ? "news-link-active" : ""
-            }
-            style={{ fontSize: "1.5rem", color: "#8E9BAE" }}
+            }`}
           >
             Defi
           </Nav.Link>
         </Link>
         <Link href="/news/defi" fontSize="23px" passHref>
           <Nav.Link
-            className={
+            className={`news-nav-link ${
               router.pathname == `/news/defi` ? "news-link-active" : ""
-            }
-            style={{ fontSize: "1.5rem", color: "#8E9BAE" }}
+            }`}
           >
             NFT
           </Nav.Link>
         </Link>
         <Link href="/news/nft" fontSize="23px" passHref>
           <Nav.Link
-            className={router.pathname == `/news/nft` ? "news-link-active" : ""}
-            style={{ fontSize: "1.5rem", color: "#8E9BAE" }}
+            className={`news-nav-link ${
+              router.pathname == `/news/nft` ? "news-link-active" : ""
+            }`}
           >
             Trending
           </Nav.Link>
