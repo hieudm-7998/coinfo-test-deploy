@@ -10,9 +10,10 @@ function TagsBlock(props) {
         Tags:
       </Text>
       <Flex flexWrap="wrap" gap={2} className="tags-block">
-        {data.map((item) => {
+        {data.map((item, index) => {
           return (
             <Badge
+              key={index}
               fontSize={14}
               fontWeight={600}
               textTransform="capitalize"

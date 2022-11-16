@@ -31,22 +31,24 @@ function TopBanner() {
               We’ve gathered trending insight news and trade signal to keep you
               on the fast track to trading success.
             </p>
-            <button className="abu-leftcol-button btn btn-primary">
+            <button className="abu-leftcol-button btn btn-primary center-in-mobile mb-5">
               Get in touch with us
             </button>
           </div>
           <div className="col-lg-4">
             <img
-              className="img-fluid"
+              className="img-fluid center-in-mobile mb-5"
               src="/assets/images/aboutus-topbanner.png"
               alt=""
             />
           </div>
           <div className="col-lg-4">
-            <h1 className="abu-rightcol-heading">Core Principles</h1>
-            <h1 className="abu-rightcol-heading mb-5">
-              Platform <span className="brd-btm-blue ">Work!</span>
-            </h1>
+            <div className="center-in-mobile">
+              <h1 className="abu-rightcol-heading">Core Principles</h1>
+              <h1 className="abu-rightcol-heading mb-5">
+                Platform <span className="brd-btm-blue ">Work!</span>
+              </h1>
+            </div>
             {TopBannerVariant.map((item, index) => {
               return (
                 <div className="abu-banner-value" key={index}>

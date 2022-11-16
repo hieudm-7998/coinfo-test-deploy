@@ -54,15 +54,32 @@ export default function JobHiring() {
   const settings = {
     infinite: true,
     slidesToShow: 3,
+    slidesToScroll: 3,
     speed: 500,
     arrows: false,
     dots: true,
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
 
   return (
     <div className="abu-job-bg">
       <div className="container abu-job">
-        <div className="d-flex justify-content-between align-items-center mb-5">
+        <div className="d-flex column-mobile justify-content-between align-items-center mb-5">
           <div>
             <h1 className="abu-job-heading">
               Work <span className="brd-btm-blue">with Us!</span>
@@ -73,6 +90,7 @@ export default function JobHiring() {
         </div>
         <div>
           <Slider {...settings}>
+            <div className="row"></div>
             <CustomSlide />
             <CustomSlide />
             <CustomSlide />

@@ -5697,11 +5697,23 @@ hr {
   font-weight: 700;
   font-size: 2.5rem;
   color: #183b56;
+  margin-bottom: 0.5rem;
+}
+@media screen and (min-width: 768px) {
+  .abu-job .abu-job-heading {
+    margin: 0;
+  }
 }
 .abu-job .abu-job-subheading {
   font-size: 2rem;
   color: #183b56;
   font-weight: 400;
+  margin-bottom: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .abu-job .abu-job-subheading {
+    margin: 0;
+  }
 }
 .abu-job .abu-job-viewalljob {
   background: #165cdd;
@@ -5759,7 +5771,6 @@ hr {
   padding: 100px 0;
 }
 .contact-area .contact-title h1 {
-  font-family: "Lato", sans-serif;
   font-weight: 900;
   font-size: 2.5rem;
   color: #3b3b3b;
@@ -5891,4 +5902,30 @@ hr {
     flex-direction: row;
     justify-content: space-between;
   }
+}
+
+.center-in-mobile {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .center-in-mobile {
+    margin: 0;
+    text-align: unset;
+  }
+}
+
+.column-mobile {
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .column-mobile {
+    flex-direction: row;
+  }
+}
+
+.contact-no-border {
+  border: none !important;
+  background: white !important;
 }/*# sourceMappingURL=style.css.map */

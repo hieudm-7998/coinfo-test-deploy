@@ -138,6 +138,49 @@ $circul-std-500: "Circular Std medium";
 
 /* Circular Std Font End */
 
+// Breakpoint Mixin
+
+$min-xs: 375px;
+$min-sm: 576px;
+$min-md: 768px;
+$min-lg: 992px;
+$min-xl: 1200px;
+
+// min screen 375px
+@mixin min-xs {
+  @media screen and (min-width: $min-xs) {
+    @content;
+  }
+}
+
+// min screen 576px
+@mixin min-sm {
+  @media screen and (min-width: $min-sm) {
+    @content;
+  }
+}
+
+// min screen 768px
+@mixin min-md {
+  @media screen and (min-width: $min-md) {
+    @content;
+  }
+}
+
+// min screen 992px
+@mixin min-lg {
+  @media screen and (min-width: $min-lg) {
+    @content;
+  }
+}
+
+// min screen 1200px
+@mixin min-xl {
+  @media screen and (min-width: $min-xl) {
+    @content;
+  }
+}
+
 a {
   font-family: $circul-std-400;
   color: unset;
@@ -6105,11 +6148,19 @@ hr {
     font-weight: 700;
     font-size: 2.5rem;
     color: #183b56;
+    margin-bottom: 0.5rem;
+    @include min-md() {
+      margin: 0;
+    }
   }
   .abu-job-subheading {
     font-size: 2rem;
     color: #183b56;
     font-weight: 400;
+    margin-bottom: 1rem;
+    @include min-md() {
+      margin: 0;
+    }
   }
   .abu-job-viewalljob {
     background: #165cdd;
@@ -6174,7 +6225,6 @@ hr {
   padding: 100px 0;
   .contact-title {
     h1 {
-      font-family: $fontheader-1;
       font-weight: 900;
       font-size: 2.5rem;
       color: #3b3b3b;
@@ -6235,48 +6285,6 @@ hr {
   }
 }
 
-// Breakpoint Mixin
-
-$min-xs: 375px;
-$min-sm: 576px;
-$min-md: 768px;
-$min-lg: 992px;
-$min-xl: 1200px;
-
-// min screen 375px
-@mixin min-xs {
-  @media screen and (min-width: $min-xs) {
-    @content;
-  }
-}
-
-// min screen 576px
-@mixin min-sm {
-  @media screen and (min-width: $min-sm) {
-    @content;
-  }
-}
-
-// min screen 768px
-@mixin min-md {
-  @media screen and (min-width: $min-md) {
-    @content;
-  }
-}
-
-// min screen 992px
-@mixin min-lg {
-  @media screen and (min-width: $min-lg) {
-    @content;
-  }
-}
-
-// min screen 1200px
-@mixin min-xl {
-  @media screen and (min-width: $min-xl) {
-    @content;
-  }
-}
 .news-top-banner {
   margin-bottom: 200px;
   .news-top-new-popup {
@@ -6338,4 +6346,26 @@ $min-xl: 1200px;
     flex-direction: row;
     justify-content: space-between;
   }
+}
+
+.center-in-mobile {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  @include min-md() {
+    margin: 0;
+    text-align: unset;
+  }
+}
+
+.column-mobile {
+  flex-direction: column;
+  @include min-md() {
+    flex-direction: row;
+  }
+}
+
+.contact-no-border {
+  border: none !important;
+  background: white !important;
 }

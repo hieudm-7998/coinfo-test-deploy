@@ -6,6 +6,7 @@ import {
   AccordionPanel,
   AccordionIcon,
   Box,
+  Text,
 } from "@chakra-ui/react";
 
 export default function ContactArea() {
@@ -126,16 +127,18 @@ export default function ContactArea() {
             <div className="col-xxl-8 col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
               <div className="contact-accordion">
                 <Accordion defaultIndex={[0]} allowMultiple>
-                  <AccordionItem>
+                  <AccordionItem className="rounded">
                     <h2>
-                      <AccordionButton>
+                      <AccordionButton className="contact-no-border">
                         <Box flex="1" textAlign="left" as="b">
-                          Ornare laoreet mi tempus neque
+                          <Text fontSize="1rem">
+                            Ornare laoreet mi tempus neque
+                          </Text>
                         </Box>
                         <AccordionIcon />
                       </AccordionButton>
                     </h2>
-                    <AccordionPanel pb={4}>
+                    <AccordionPanel p={7}>
                       Timperdiet gravida scelerisque odio nunc. Eget felis, odio
                       bibendum quis eget sit lorem donec diam. Volutpat sed orci
                       turpis sit dolor est a pretium eget. Vitae turpis orci vel
@@ -144,16 +147,18 @@ export default function ContactArea() {
                     </AccordionPanel>
                   </AccordionItem>
 
-                  <AccordionItem>
+                  <AccordionItem className="rounded">
                     <h2>
-                      <AccordionButton>
+                      <AccordionButton className="contact-no-border">
                         <Box flex="1" textAlign="left" as="b">
-                          Ornare laoreet mi tempus neque
+                          <Text fontSize="1rem">
+                            Rhoncus nullam aliquam nam proin
+                          </Text>
                         </Box>
                         <AccordionIcon />
                       </AccordionButton>
                     </h2>
-                    <AccordionPanel pb={4}>
+                    <AccordionPanel p={7}>
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                       sed do eiusmod tempor incididunt ut labore et dolore magna
                       aliqua. Ut enim ad minim veniam, quis nostrud exercitation
@@ -161,16 +166,19 @@ export default function ContactArea() {
                     </AccordionPanel>
                   </AccordionItem>
 
-                  <AccordionItem>
+                  <AccordionItem className="rounded">
                     <h2>
-                      <AccordionButton>
+                      <AccordionButton className="contact-no-border">
                         <Box flex="1" textAlign="left" as="b">
-                          Ornare laoreet mi tempus neque
+                          <Text fontSize="1rem">
+                            Duis enim bibendum dui ut fringilla suspendisse vel
+                            sed ultricies
+                          </Text>
                         </Box>
                         <AccordionIcon />
                       </AccordionButton>
                     </h2>
-                    <AccordionPanel pb={4}>
+                    <AccordionPanel p={7}>
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                       sed do eiusmod tempor incididunt ut labore et dolore magna
                       aliqua. Ut enim ad minim veniam, quis nostrud exercitation
@@ -178,16 +186,19 @@ export default function ContactArea() {
                     </AccordionPanel>
                   </AccordionItem>
 
-                  <AccordionItem>
+                  <AccordionItem className="rounded">
                     <h2>
-                      <AccordionButton>
+                      <AccordionButton className="contact-no-border">
                         <Box flex="1" textAlign="left" as="b">
-                          Ornare laoreet mi tempus neque
+                          <Text fontSize="1rem">
+                            Lectus fringilla volutpat egestas nisi, viverra
+                            mauris
+                          </Text>
                         </Box>
                         <AccordionIcon />
                       </AccordionButton>
                     </h2>
-                    <AccordionPanel pb={4}>
+                    <AccordionPanel p={7}>
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                       sed do eiusmod tempor incididunt ut labore et dolore magna
                       aliqua. Ut enim ad minim veniam, quis nostrud exercitation
@@ -195,16 +206,38 @@ export default function ContactArea() {
                     </AccordionPanel>
                   </AccordionItem>
 
-                  <AccordionItem>
+                  <AccordionItem className="rounded">
                     <h2>
-                      <AccordionButton>
+                      <AccordionButton className="contact-no-border">
                         <Box flex="1" textAlign="left" as="b">
-                          Ornare laoreet mi tempus neque
+                          <Text fontSize="1rem">
+                            Vitae sollicitudin vitae libero tincidunt
+                          </Text>
                         </Box>
                         <AccordionIcon />
                       </AccordionButton>
                     </h2>
-                    <AccordionPanel pb={4}>
+                    <AccordionPanel p={7}>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </AccordionPanel>
+                  </AccordionItem>
+
+                  <AccordionItem className="rounded">
+                    <h2>
+                      <AccordionButton className="contact-no-border">
+                        <Box flex="1" textAlign="left" as="b">
+                          <Text fontSize="1rem">
+                            Tellus velit vitae arcu lacinia pharetra, ut lectus
+                            pulvinar facilisis
+                          </Text>
+                        </Box>
+                        <AccordionIcon />
+                      </AccordionButton>
+                    </h2>
+                    <AccordionPanel p={7}>
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                       sed do eiusmod tempor incididunt ut labore et dolore magna
                       aliqua. Ut enim ad minim veniam, quis nostrud exercitation
